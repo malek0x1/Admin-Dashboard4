@@ -1,0 +1,17 @@
+import './App.css';
+import Main from './components/Main/Main';
+import RightBar from './components/RightBar/RightBar';
+import Sidebar from './components/Sidebar/Sidebar';
+
+function App() {
+  return (
+    <div className="App">
+      <Sidebar/>
+      <Main/>
+      <RightBar/>
+      
+    </div>
+  );
+}
+
+export default App;
