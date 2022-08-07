@@ -1,7 +1,7 @@
 import React from 'react'
 import './RightBar.css'
-// import IMG from './img.jpeg'
-import IMG from './img2.jpg'
+import IMG from './imgs/img2.jpg'
+import RightBarUser from './RightBarUser'
 
 
 const RightBar = () => {
@@ -12,34 +12,11 @@ const RightBar = () => {
                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" />
             </div>
             <div className="RightBar-body">
-                <div className="RightBar-body-user">
-                    <img src={IMG} style={{objectFit:'cover'}}/>
-                    <div className="RightBar-body-user-detail">
-                        <p className='p-name'>Malek Mneimneh</p>
-                        <p className="p-address">France, Paris</p>
-                    </div>
-                </div>
-                <div className="RightBar-body-user">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" />
-                    <div className="RightBar-body-user-detail">
-                        <p className='p-name'>John abc</p>
-                        <p className="p-address">France, Paris</p>
-                    </div>
-                </div>
-                <div className="RightBar-body-user">
-                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" />
-                    <div className="RightBar-body-user-detail">
-                        <p className='p-name'>Zien xyz</p>
-                        <p className="p-address">France, Paris</p>
-                    </div>
-                </div>
-                <div className="RightBar-body-user">
-                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" />
-                    <div className="RightBar-body-user-detail">
-                        <p className='p-name'>John Doe</p>
-                        <p className="p-address">France, Paris</p>
-                    </div>
-                </div>
+
+                <RightBarUser src={IMG} malek name="Malek Mneimneh" />
+                <RightBarUser src="https://bootdey.com/img/Content/avatar/avatar1.png" name="John abc" />
+                <RightBarUser src="https://bootdey.com/img/Content/avatar/avatar2.png" name="Zien xyz" />
+                <RightBarUser src="https://bootdey.com/img/Content/avatar/avatar3.png" name="Aya Doe" />
             </div>
             <div className="RightBar-Footer">
                 <h3 className='RightBar-Footer-h3-title'>Today's Orders</h3>

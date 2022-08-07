@@ -29,11 +29,19 @@
 
 }
 
+
+
 .SideBar-Option {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 19px;
+    border-radius: 8px;
+    padding: 10px 5px;
+}
+
+.SideBar-Option:hover {
+    background-color: #eee;
+    cursor: pointer;
 }
 
 .SideBar-Option-Name {
@@ -70,6 +78,7 @@
         min-width: 20px;
     }
 }
+
 @media (max-width: 480px) {
 
     .SideBar-Option-Name,
@@ -84,7 +93,7 @@
         align-items: center;
         flex-direction: column;
         max-width: 10px !important;
-        min-width:10px !important;
+        min-width: 10px !important;
     }
 
 }
